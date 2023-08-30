@@ -37,24 +37,26 @@
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 // import Footer from "./components/Footer";
-// import Page from "./components/Page";
+import Page from "./components/Page";
 import { useLocation } from "react-router-dom";
-import ParticleField from "./components/Particles"
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import ParticleField from "./components/Particles";
+import './App.css'
 
 function App() {
   const currentPage = useLocation().pathname;
 
   return (
     <div>
-    <ParticleField>
+    
       <Header>
         <Nav currentPage={currentPage} />
       </Header>
-    </ParticleField>
-      {/* <main>
+   
+      <main>
         <Page currentPage={currentPage} />
       </main>
-      <Footer /> */}
+   
     </div>
   );
 }
