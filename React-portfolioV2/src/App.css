@@ -6,10 +6,11 @@
 }
 
 #root {
-  max-width: 100%;
+  min-width: 100%;
   margin: 0 auto;
   text-align: center;
   /* z-index: -1; */
+  background-color: rgb(11, 20, 49)
 }
 
 
@@ -92,15 +93,15 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-pink);
 }
 
-/* .header-wrapper {
+.header-wrapper {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(yes.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../src/assets/cover/yes.jpg) no-repeat;
 
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 50vh;
   
-} */
+}
 
 .main-info {
   display: flex;
@@ -196,6 +197,11 @@ canvas {
   }
 }
 
+/* --------------------------- Particle stop -------------------------------------------------- */
+
+.pageContainer {
+  background-color: rgb(11, 20, 49);
+}
 .portfoliobg {
   position: relative;
   background-color: rgb(11, 20, 49);

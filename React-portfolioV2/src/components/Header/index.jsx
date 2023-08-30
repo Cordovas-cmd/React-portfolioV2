@@ -15,7 +15,7 @@ function Header(props) {
     
     <a href="#contact" className="btn-main-offer">Contact Me</a>
             </div>
-            <img src={coverImage} alt="wooden background"></img>
+            {/* <img src={coverImage} alt="wooden background"></img> */}
             {props.children}
         </header>
         </>
