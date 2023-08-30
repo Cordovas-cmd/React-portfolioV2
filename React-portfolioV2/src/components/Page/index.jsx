@@ -12,7 +12,7 @@ function Page({ currentPage }) {
   }, [currentPage]);
 
   return (
-    <section>
+    <section className="pageContainer">
       <h2>{capitalizeFirstLetter(currentPage)}</h2>
 
       <PageContent>

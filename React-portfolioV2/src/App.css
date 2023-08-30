@@ -215,7 +215,7 @@ canvas {
   width: 400px
 }
 
-.card {
+.skill-card  {
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(41, 23, 145, 0.5);
   text-align: center;
