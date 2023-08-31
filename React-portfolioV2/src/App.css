@@ -82,8 +82,8 @@ nav ul li {
 }
 
 /* on focus adds border top */
-.navbar-nav>li>a:active,
-.navbar-nav>li>a.active:focus {
+.navbar-nav>li.navActive,
+.navbar-nav>li.navActive>a:focus {
   color: rebeccapurple;
   border-top: 0.1875rem solid var(--primary-pink);
   /* border-bottom: 0.1875rem solid var(--primary-pink); */
@@ -100,7 +100,7 @@ nav ul li {
 
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 75vh;
   
 }
 
