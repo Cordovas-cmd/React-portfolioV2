@@ -9,24 +9,25 @@ function Nav({ currentPage }) {
     <div className="container-fluid">
       <ul className="flex-row navbar-nav ml-auto">
         <li
-          className="nav-item"
+          className={` nav-item   ${currentPage === '/' && 'navActive'}`}
+        key="about"
         >
-        <a className=
+        {/* <a className=
         {` nav-link mx-5 ${currentPage === '/' && 'navActive'}`}
-        key="about">
-          <Link to="/">About</Link>
-       </a>
+        key="about"> */}
+          <Link className="nav-link " to="/">About</Link>
+       {/* </a> */}
         </li>
         {pages.map((Page) => (
           <li
-             className="nav-item"
+              className={` nav-item  ${currentPage === '/' && 'navActive'}`}
+              key={Page}
            
           >
-            <a className=
-        {` nav-link mx-5 ${currentPage === '/' && 'navActive'}`}
-        key={Page}>
-        <Link to={`/${Page}`}>{capitalizeFirstLetter(Page)}</Link>
-       </a>
+       
+        <Link className= "nav-link"
+        to={`/${Page}`}>{capitalizeFirstLetter(Page)}</Link>
+      
             
           </li>
         ))}
